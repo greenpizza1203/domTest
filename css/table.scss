@@ -1,0 +1,69 @@
+@use "constants";
+
+table {
+  margin: auto;
+}
+
+table, td {
+  //border: 4px solid #222;
+  padding: 0;
+  border-collapse: collapse;
+}
+
+tr {
+  height: constants.$tile-width;
+  width: constants.$square-size;
+}
+
+td {
+  vertical-align: top;
+}
+
+
+td.left {
+  vertical-align: bottom;
+  //display: flex;
+  //justify-content: flex-end;
+
+  height: constants.$tile-width;
+
+  .tile {
+    margin-left: constants.$tile-height  - constants.$tile-width;
+    transform-origin: top right;
+
+    transform: rotate(90deg);
+  }
+}
+
+td.right {
+  vertical-align: bottom;
+  height: constants.$tile-width;
+
+  .tile {
+    transform: rotate(-90deg);
+  }
+}
+
+td.top {
+  .tile {
+    margin-top: constants.$tile-height;
+    margin-left: constants.$tile-width;
+
+    transform: rotate(180deg);
+  }
+
+}
+
+td.corner {
+  width: constants.$tile-height;
+  height: constants.$tile-height;
+}
+
+
+tr.edge {
+  height: constants.$tile-height;
+
+  td.default {
+    width: constants.$tile-width
+  }
+}

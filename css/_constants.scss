@@ -1,0 +1,4 @@
+$tile-ratio: 0.15;
+$square-size: 900px;
+$tile-width: $square-size * (1 - ($tile-ratio) * 2) / 9;
+$tile-height: $square-size * $tile-ratio;

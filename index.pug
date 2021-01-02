@@ -1,0 +1,26 @@
+include pug/tiles/default_tile
+doctype html
+html
+    head
+        title DomTest
+        for file in ["main","table","tiles"]
+            link(rel="stylesheet", href=`css/${file}.css`)
+    body: table
+        tr.edge
+            include pug/tiles/corner_tile
+            for _ in Array(9)
+                +default_tile(-1,"top")
+            include pug/tiles/corner_tile
+        tr
+            +default_tile(-1,"left")
+            include pug/middle/middle_section
+            +default_tile(-1,"right")
+            - for (let i = 18; i >=11; i--)
+                tr
+                    +default_tile(i,"left")
+                    +default_tile(40-i,"right")
+        tr.edge
+            include pug/tiles/corner_tile
+            - for (let i = 9; i >=1; i--)
+                +default_tile(i,"bottom")
+            include pug/tiles/corner_tile

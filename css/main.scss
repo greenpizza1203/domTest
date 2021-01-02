@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+}
+
+
+#parent {
+  position: relative;
+}
+
+
+.bar {
+  ///*width: calc(100% - 4px);*/
+  width: inherit;
+  bottom: 0;
+  height: 10%;
+  position: absolute;
+  background: blue;
+}

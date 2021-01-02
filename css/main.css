@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+}
+
+#parent {
+  position: relative;
+}
+
+.bar {
+  width: inherit;
+  bottom: 0;
+  height: 10%;
+  position: absolute;
+  background: blue;
+}
+
+/*# sourceMappingURL=main.css.map */

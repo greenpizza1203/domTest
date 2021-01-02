@@ -1,0 +1,33 @@
+.tile {
+  width: 70px;
+  height: 135px;
+  position: absolute;
+  transform-origin: top left;
+  box-sizing: border-box;
+}
+
+.even {
+  background: #f6f6f6;
+}
+
+.odd {
+  background: #ededed;
+}
+
+.houses {
+  display: block;
+}
+
+.ui {
+  display: none;
+}
+
+.bar:hover .houses {
+  display: none;
+}
+
+.bar:hover .ui {
+  display: block;
+}
+
+/*# sourceMappingURL=tiles.css.map */

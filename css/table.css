@@ -1,0 +1,55 @@
+table {
+  margin: auto;
+}
+
+table, td {
+  padding: 0;
+  border-collapse: collapse;
+}
+
+tr {
+  height: 70px;
+  width: 900px;
+}
+
+td {
+  vertical-align: top;
+}
+
+td.left {
+  vertical-align: bottom;
+  height: 70px;
+}
+td.left .tile {
+  margin-left: 65px;
+  transform-origin: top right;
+  transform: rotate(90deg);
+}
+
+td.right {
+  vertical-align: bottom;
+  height: 70px;
+}
+td.right .tile {
+  transform: rotate(-90deg);
+}
+
+td.top .tile {
+  margin-top: 135px;
+  margin-left: 70px;
+  transform: rotate(180deg);
+}
+
+td.corner {
+  width: 135px;
+  height: 135px;
+}
+
+tr.edge {
+  height: 135px;
+}
+tr.edge td.default {
+  width: 70px;
+}
+
+/*# sourceMappingURL=table.css.map */

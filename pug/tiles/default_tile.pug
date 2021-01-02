@@ -1,0 +1,5 @@
+mixin default_tile(index,side)
+    td.default(id=index, class=side)
+        .tile(class=(index % 2 ? "even" : "odd"))
+            span= index
+            include street/bar

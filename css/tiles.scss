@@ -1,0 +1,34 @@
+@use 'constants';
+
+.tile {
+  width: constants.$tile-width;
+  height: constants.$tile-height;
+  position: absolute;
+  transform-origin: top left;
+  box-sizing: border-box;
+  //outline: 4px solid red;
+
+
+}
+.even{
+  background: #f6f6f6;
+}
+.odd{
+  background: #ededed;
+}
+.houses {
+  display: block;
+}
+
+.ui {
+  display: none;
+}
+
+
+.bar:hover .houses {
+  display: none;
+}
+
+.bar:hover .ui {
+  display: block;
+}
